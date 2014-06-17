@@ -18,6 +18,24 @@ app.post('/api/people', function(req, res) {
   people[id] = person;
   res.json({ person: person });
 });
+// app.get('/api/people', function(req, res){
+//   var id = req.param.uid;
+//      file = person;
+//        var person = {
+//     		id: 1,
+//     		name: req.param('name')
+//   		};
+//   		people[id] = person;
+//   		res.json({ person: person });
+// 	});
+//   req.user.mayViewFilesFrom(uid, function(yes){
+//     if (yes) {
+//       res.sendfile(file);
+//     } else {
+//       res.send(403, 'Sorry! you cant see that.');
+//     }
+//   });
+// });
 
 var server = app.listen(process.env.PORT || 3000, function() {
   console.log('Listening on port %d', server.address().port);
